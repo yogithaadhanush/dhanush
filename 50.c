@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 {
-	int a,n;
+	int b,n;
 	scanf("%d",&n);
-	a=(n&(n-1));
-	if(a==0)
+	b=(n&(n-1));
+	if(b==0)
 	{
 		printf("yes");
 	}
