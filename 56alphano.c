@@ -1,16 +1,28 @@
 #include<stdio.h>
 int main()
 {
-	int i;
-	char k[10];
-	scanf("%s",&k);
-	if((k[i]>='a'&&k[i]<='z')||(k[i]>='A'&&k[i]<='Z')||(k[i]>=0&&k[i]<=9))
-	{
-		printf("yes");
-	}
-	else
-	{
-		printf("no");
-	}
-	return 0;
+	int i,count=0,count1=0;
+	char a[100];
+    printf("Enter the string:");
+    scanf("%s",&a);
+    for(i=0;a[i]!='\0';i++)
+    {
+        if((a[i]>='a'&&a[i]<='z')||(a[i]>='A'&&a[i]<='Z'))
+        {
+            count++;
+        }
+        else if(a[i]>='0'&&a[i]<='9')
+        {
+            count1++;
+        }
+    }
+    if(count>0&&count1>0)
+    {
+        printf("yes");
+    }
+    else
+    {
+        printf("no");
+    }
+    return 0;
 }
