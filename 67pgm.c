@@ -1,15 +1,14 @@
 #include <stdio.h>
 
-int main(void) 
+int main() 
 {
-	int num;
-	printf("enter the number:");
-	scanf("%d",&num);
-	num+=1;
-	while(num%10!=0)
+	int n;
+	scanf("%d",&n);
+	n+=1;
+	while(n%10!=0)
 	{
-		num=num+1;
+		n=n+1;
 	}
-	printf("\n%d",num);
+	printf("\n%d",n);
 	return 0;
 }
